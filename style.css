@@ -8,25 +8,60 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #bbbbbb;
 }
 
 #container {
-  border: 2px solid white;
+  border: 2px solid #bbbbbb;
   border-radius: 5px;
   width: 400px;
-  height: 500px;
+  height: 620px;
   padding: 20px;
   box-sizing: border-box;
 }
 
 #calculator-display {
-  height: 60px;
+  height: 120px; /* Increased height to accommodate multiple lines */
   border-radius: 5px;
   background-color: #333;
   color: white;
   text-align: right;
-  font-size: 3em;
+  font-size: 2.5em; /* Slightly smaller to fit more content */
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto; /* Vertical scrolling */
+  word-wrap: break-word; /* Allow words to break and wrap to next line */
+  word-break: break-all; /* Break words at any character */
+  white-space: pre-wrap; /* Preserve line breaks */
+  direction: ltr;
+  display: block; /* Changed from flex to block for better line wrapping */
+}
+
+/* Create a wrapper for the content to display correctly */
+#calculator-display span {
+  display: inline-block;
+}
+
+#calculator-display::-webkit-scrollbar {
+  width: 8px; /* Changed from height to width for vertical scrollbar */
+}
+
+#calculator-display::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+#calculator-display::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+#result-display {
+  height: 30px;
+  border-radius: 5px;
+  /* background-color: #333; */
+  color: #808080;
+  text-align: right;
+  font-size: 1.5em;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -35,7 +70,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  height: calc(100% - 100px);
+  height: calc(100% - 220px);
 }
 
 button {
