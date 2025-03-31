@@ -13,7 +13,7 @@ h1 {
 
 #container {
   border: 2px solid #bbbbbb;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 400px;
   height: 560px;
   padding: 20px;
@@ -25,19 +25,9 @@ h1 {
   border-radius: 5px;
   background-color: #333;
   color: white;
+  text-shadow: 1px 1px 3px black;
   text-align: right;
-  font-size: 3em;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-#result-display {
-  height: 30px;
-  border-radius: 5px;
-  background-color: #333;
-  color: #808080;
-  text-align: right;
-  font-size: 1.5em;
+  font-size: 3.25em;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -46,21 +36,19 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  height: calc(100% - 160px);
+  height: 420px;
 }
 
 button {
-  flex: 1 0 21%;
-  padding: 15px 0;
-  font-size: 1.5em;
-  border-radius: 5px;
-  margin: 0;
-  text-align: center;
+  flex: 1 0 20%;
+  font-size: 1.75em;
+  border-radius: 100%;
   cursor: pointer;
   background-color: #555;
   color: white;
-  border: none;
+  text-shadow: 1px 1px 3px black;
   transition: background-color 0.2s;
+  border: none;
 }
 
 button:hover {
@@ -73,10 +61,12 @@ button:active {
 }
 
 #equals-btn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 #clear-btn {
+  flex: 0 0 173px;
+  border-radius: 50px;
   background-color: #f44336;
 }
 
@@ -85,5 +75,9 @@ button:active {
 }
 
 .operator-btn {
-  background-color: #FF9800;
+  background-color: #ff9800;
+}
+
+#fun-btn {
+  /* implement something fun here! */
 }

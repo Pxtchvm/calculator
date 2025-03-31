@@ -62,6 +62,7 @@ backspaceButton.addEventListener("click", () => {
 });
 
 funButton.addEventListener("click", () => {
+  // implement something fun here!
   alert("calculator is fun isn't it?!")
 });
 
